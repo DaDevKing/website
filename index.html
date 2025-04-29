@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jett Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h2>Welcome!</h2>
+    <h1>Hi, I'm Jett — a programmer and tinkerer based in the US.</h1>
+    <p>I specialize in Java, Kotlin, Python, and Batch scripting. I love building automation tools, experimenting with code, creating Minecraft mods, and diving into ethical hacking and reverse engineering.</p>
+  
+    <div class="languages-container">
+      <img src="assets/images/javalogo.png" alt="Java" class="language-logo">
+      <img src="assets/images/kotlinlogo.png" alt="Kotlin" class="language-logo">
+      <img src="assets/images/pythonlogo.png" alt="Python" class="language-logo">
+      <img src="assets/images/bashlogo.png" alt="Batch" class="language-logo">
+    </div>
+  
+    <div class="projects-container">
+      <h2 class="projects-title">Project Showcase</h2>
+  
+      <div class="project-info">
+        <strong>MagmaPlay's custom manhunt plugin</strong><br>
+        <a href="path/to/download" class="projects-button">Download here</a>
+        <a href="magmahunt.html" class="projects-button">Learn More</a>
+      </div>
+  
+      <div class="project-info">
+        <strong>Project 2</strong><br>
+        <a href="path/to/download" class="projects-button">Download</a>
+        <a href="#" class="projects-button">Documentation</a>
+      </div>
+    </div>
+  
+    <div class="contact-section">
+      <h2>Let's Connect</h2>
+      <p>Email: <a href="mailto:fallinganvil8@gmail.com">fallinganvil8@gmail.com</a></p>
+      <p>Fiverr: <a href="https://www.fiverr.com/hc_107?up_rollout=true">My Fiverr Page</a></p>
+      <p>Patreon: <a href="https://www.patreon.com/DaDevKing">Support on Patreon</a></p>
+    </div>
+  
+    <script>
+      window.addEventListener('scroll', () => {
+        document.querySelectorAll('.language-logo').forEach(logo => {
+          const rect = logo.getBoundingClientRect();
+          if (rect.top < window.innerHeight) {
+            logo.classList.add('visible');
+          }
+        });
+      });
+    </script>
+</body>
+</html>
